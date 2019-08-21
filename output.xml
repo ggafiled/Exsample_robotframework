@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.5 on win32)" generated="20190612 10:27:11.652" rpa="false">
+<suite id="s1" name="Google" source="C:\Robot\google.robot">
+<test id="s1-t1" name="ค้นหา Robotframework ด้วย Google">
+<kw name="เข้า Web Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20190612 10:27:11.887" level="INFO">Opening browser 'gc' to base url 'www.google.com'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190612 10:27:15.665" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190612 10:27:15.203" endtime="20190612 10:27:15.666"></status>
+</kw>
+<msg timestamp="20190612 10:27:15.808" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=75.0.3770.80)
+</msg>
+<status status="FAIL" starttime="20190612 10:27:11.886" endtime="20190612 10:27:15.809"></status>
+</kw>
+<status status="FAIL" starttime="20190612 10:27:11.886" endtime="20190612 10:27:15.809"></status>
+</kw>
+<status status="FAIL" starttime="20190612 10:27:11.885" endtime="20190612 10:27:15.811" critical="yes">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=75.0.3770.80)
+</status>
+</test>
+<status status="FAIL" starttime="20190612 10:27:11.655" endtime="20190612 10:27:15.816"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
